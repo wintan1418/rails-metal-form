@@ -1,0 +1,16 @@
+
+<form accept-charset="UTF-8" action="/" method="post">
+  <input name="authenticity_token" type="hidden" value="J7CBxfHalt49OSHp27hblqK20c9PgwJ108nDHX/8Cts=" />
+  <%= form_with model: @user do |form| %>
+    <%= form.label :username, "User name:" %>
+    <%= form.text_field :username, placeholder: "Enter your name", autofocus: true %><br><br>
+  
+    <%= form.label :email, "Email:" %>
+    <%= form.email_field :email, placeholder: "example@example.com" %><br><br>
+  
+    <%= form.label :password, "Password:" %>
+    <%= form.text_field :password, placeholder: "Enter your new password" %><br><br>
+  
+    <%= form.submit "Create User" %>
+  <% end %>
+</form>
