@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     end
 
     def create
-        user_params = {"username"=>"username", "email"=>"email", "password"=>"[FILTERED]"}
+        user_params = {:username=>"username", :email=>"email", :password=>"[FILTERED]"}
 
         @user = User.new(user_params)
 
@@ -12,6 +12,7 @@ class UsersController < ApplicationController
             redirect_to_new_user_path
         else
             render :new
+
 
         end
     end
