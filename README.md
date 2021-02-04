@@ -23,7 +23,7 @@ To get this project set up on your local machine, follow these simple steps:
 -Run bundle install to get the necesary gems.
 -Run rails db:migrate.
 
-![screenshot](./images/form.png)
+![screenshot](.assets/images/form.png)
 
 
  ## Authors
