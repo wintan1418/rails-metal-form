@@ -21,15 +21,13 @@
 # <% end %>
 
 
-<%= form_with model: @user do |form| %>
-    <%= form.label :username, "User name:" %>
-    <%= form.text_field :username, placeholder: "Enter your name", autofocus: true %><br><br>
 
-    <%= form.label :email, "Email:" %>
-    <%= form.email_field :email, placeholder: "example@example.com" %><br><br>
-
-    <%= form.label :password, "Password:" %>
-    <%= form.text_field :password, placeholder: "Enter your new password" %><br><br>
-
-    <%= form.submit "Create User" %>
+<%= form_for @user, url: {action: "create"}, html: {class: ""} do |f| %>
+    UserName: <%= f.text_field :username %><br><br>
+    Email: <%= f.text_field :email, placeholder: 'example@example.com' %><br><br>
+    Password: <%= f.text_field :password, placeholder: '**********' %><br><br>
+    <%= f.submit "Submit" %>
 <% end %>
+
+
+
