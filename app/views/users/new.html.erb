@@ -10,12 +10,26 @@
 # </form> 
 
 
-<%= form_tag("/users", method: "POST") do %>
-  <%= label_tag(:username, "Username:") %>
-  <%= text_field_tag(:username) %><br><br>
-  <%= label_tag(:email, "email:") %>
-  <%= text_field_tag(:email) %><br><br>
-  <%= label_tag(:password, "password:") %>
-  <%= text_field_tag(:password) %><br><br>
-  <%= submit_tag("submit") %>
+# <%= form_tag("/users", method: "POST") do %>
+#   <%= label_tag(:username, "Username:") %>
+#   <%= text_field_tag(:username) %><br><br>
+#   <%= label_tag(:email, "Email:") %>
+#   <%= text_field_tag(:email) %><br><br>
+#   <%= label_tag(:password, "Password:") %>
+#   <%= text_field_tag(:password) %><br><br>
+#   <%= submit_tag("Submit") %>
+# <% end %>
+
+
+<%= form_with model: @user do |form| %>
+    <%= form.label :username, "User name:" %>
+    <%= form.text_field :username, placeholder: "Enter your name", autofocus: true %><br><br>
+
+    <%= form.label :email, "Email:" %>
+    <%= form.email_field :email, placeholder: "example@example.com" %><br><br>
+
+    <%= form.label :password, "Password:" %>
+    <%= form.text_field :password, placeholder: "Enter your new password" %><br><br>
+
+    <%= form.submit "Create User" %>
 <% end %>
