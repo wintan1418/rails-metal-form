@@ -1,9 +1,10 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # PROJECT:FORMS
 
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 This project is a description of the multiple ways to build a form in rails that can send parameters to a controller so that it can create an instance of a model with those parameters.
+
+![Screenshot from 2021-02-05 12-30-54](https://user-images.githubusercontent.com/43843720/107016009-77fd6e00-67ae-11eb-8b2e-42957befaa56.png)
 
 # Built with
 * Ruby - version 2.7.2
@@ -15,7 +16,7 @@ This project is a description of the multiple ways to build a form in rails that
 
 ### Prerequisites
 
-**To get this project set up on your local machine, follow these simple steps:
+#### To get this project set up on your local machine, follow these simple steps:
 
 * To get this project up and running locally, you must already have ruby and necessary gems installed on your computer.
 *  Open Terminal.
@@ -59,7 +60,7 @@ Finally, if you've read this far, don't forget to give this repo a ⭐️. They'
 
 ## Acknowledgments
 
-- Official [Rails guides](https://guides.rubyonrails.org/index.html) 
-- Odin Project.
-- Microverse.
+- Official [Rails guides](https://guides.rubyonrails.org/index.html). 
+- The [Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms#project-bare-metal-forms-and-helpers).
+- [Microverse](https://www.microverse.org/).
 
