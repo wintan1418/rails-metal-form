@@ -1,3 +1,4 @@
+
 # README
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
@@ -55,3 +56,4 @@ Finally, if you've read this far, don't forget to give this repo a ⭐️. They'
 ## Acknowledgments
 
 - Official [Rails guides](https://guides.rubyonrails.org/index.html) 
+
