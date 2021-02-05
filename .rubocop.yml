@@ -1,10 +1,11 @@
 AllCops:
   Exclude:
     - "db/**/*"
-    - "bin/*" 
+    - "bin/*"
     - "config/**/*"
     - "Guardfile"
     - "Rakefile"
+    - "README.md"
     - "node_modules/**/*"
 
   DisplayCopNames: true
