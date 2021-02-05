@@ -1,13 +1,17 @@
-<%= form_for @user, url: {action: "update"}, html: {class: ""} do |f| %>
+<h1>Edit Account</h1>
 
-    <% if @user.errors.any? %>
-    <% @user.errors.full_messages.each do |error| %>
-      <%= error %>
-    <% end %>
-    <% end %>  
-  
+<% if @user.errors.any? %>
+<% @user.errors.full_messages.each do |error| %>
+  <h5><%= error %> </h5>
+<% end %>
+<% end %> 
+
+<br>
+
+<%= form_for @user, url: {action: "update"}, html: {class: ""} do |f| %>
     UserName: <%= f.text_field :username %><br><br>
     Email: <%= f.text_field :email, placeholder: 'example@example.com' %><br><br>
     Password: <%= f.text_field :password, placeholder: '**********' %><br><br>
     <%= f.submit "Update" %>
 <% end %>
+

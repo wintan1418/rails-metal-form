@@ -1,9 +1,24 @@
+<h1>Create Account</h1>
+
+<% if @user.errors.any? %>
+  <% @user.errors.full_messages.each do |message|%>
+     <h4><%= message %> </h4>
+  <%end%>
+<%end%>
+
+<br><br>
+
+
 <%= form_for @user, url: {action: "create"}, html: {class: ""} do |f| %>
     UserName: <%= f.text_field :username %><br><br>
     Email: <%= f.text_field :email, placeholder: 'example@example.com' %><br><br>
     Password: <%= f.text_field :password, placeholder: '**********' %><br><br>
     <%= f.submit "Submit" %>
 <% end %>
+
+<br>
+<p><%= link_to 'Edit Page', '/users/1/edit' %></p>
+
 
 
 
