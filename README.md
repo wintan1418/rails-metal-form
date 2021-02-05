@@ -1,30 +1,34 @@
 
-# README
+# PROJECT:FORMS
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 This project is a description of the multiple ways to build a form in rails that can send parameters to a controller so that it can create an instance of a model with those parameters.
 
 # Built with
--Ruby
--Rails
--SQLite3
--VScode
+* Ruby - version 2.7.2
+* Ruby on Rails - version 6.1.1
+* SQLite3
+* VScode
 
-# Getting started
-# prerequisites
+## Getting started
 
-To get this project up and running locally, you must already have ruby and necessary gems installed on your computer
+### Prerequisites
 
-To get this project set up on your local machine, follow these simple steps:
+**To get this project set up on your local machine, follow these simple steps:
 
--Open Terminal.
--Navigate to your desired location to download the contents of this repository.
--Copy and paste the following code into the Terminal: git clone https://github.com/wintan1418/rails-metal-form
--Run cd Rails-Forms.
--Run bundle install to get the necesary gems.
--Run rails db:migrate.
+* To get this project up and running locally, you must already have ruby and necessary gems installed on your computer.
+*  Open Terminal.
+*  Navigate to your desired location to download the contents of this repository.
+*  Copy and paste the following code into the Terminal: ``git clone https://github.com/wintan1418/rails-metal-form``.
+*  Run cd ``rails-metal-form``.
+*  Run ``bundle install`` to get the necesary gems.
+*  Run ``rails db:migrate``.
 
-![screenshot](.assets/images/form.png)
+## Run tests
+
+- Run ``rails server`` in your terminal to open rails server.
+- Open localhost in the browser you will be able interact with the webpp using the web user interface.
 
 
  ## Authors
@@ -56,4 +60,6 @@ Finally, if you've read this far, don't forget to give this repo a ⭐️. They'
 ## Acknowledgments
 
 - Official [Rails guides](https://guides.rubyonrails.org/index.html) 
+- Odin Project.
+- Microverse.
 
